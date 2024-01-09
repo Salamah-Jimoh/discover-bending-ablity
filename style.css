@@ -86,7 +86,7 @@ a{
     margin:2rem;
 }
 
-.form-field{
+.form-field .name-field{
     display: flex;
     flex-direction: column;
 }
@@ -102,7 +102,7 @@ input[type = "radio"]{
   cursor:pointer;
 }
 
-.form-field div{
+.form-field div, .name-field{
     margin-top: 1rem;
     color:rgb(14, 185, 185);
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -111,6 +111,10 @@ input[type = "radio"]{
     background-color: white;
     text-align: center;
     border-radius: 5px;
+}
+
+.name-field div{
+  margin-top: 1rem;
 }
 
 .btn{
