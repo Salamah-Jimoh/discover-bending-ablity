@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit&family=Space+Grotesk:wght@500&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+#form-field-2, #form-field-3, #form-field-4, #form-field-5, #form-field-6, #form-field-7, #name-field{
+  display: none;
+}
+
+.menu-class{
+  background-color:rgb(14, 185, 185);
+  color:white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding:.5rem;
+}
+
+
+.menu-class h3{
+  font-size:30px;
+  margin-top:1rem;
+  width:70%;
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  height:100%;
+}
+
+.container::before{
+  content:'';
+  display:block;
+  position: absolute;
+  content:'';
+  display:block;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  background: url('/assets/bg.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .1;
+}
+.form-container{  
+  position: relative;
+  display: block;
+  height:70vh;
+  width:50vw;
+  margin:auto;
+}
+
+
+.form-container h1{
+    margin-top:3rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    color:rgb(212, 24, 24);
+    text-align: center;
+}
+
+.line{
+    margin:0 auto;
+    width:3.8%;
+    padding-top: 2px;
+    border-bottom: 4px solid rgb(0 0 0 / 0.1);
+    /* margin:1rem; */
+}
+
+.my-form{
+    margin:2rem;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label{
+    display: block;
+    text-align: center;
+    margin:1rem;
+    font-size:1.5rem;
+}
+
+input[type = "radio"]{
+  cursor:pointer;
+}
+
+.form-field div{
+    margin-top: 1rem;
+    color:rgb(14, 185, 185);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    font-size:1.3rem;
+    padding:1rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn{
+    color:white;
+    background-color: rgb(212, 24, 24);
+    border-radius:.4rem;
+    border:1px solid white;
+    padding: 13px 25px;
+    transition: .9s;
+    cursor:pointer;   
+}
+
+.btn:hover{
+  color:rgb(212, 24, 24);
+  background-color: rgb(0 0 0 / 0.1);
+}
+
+ .name-btn{
+    padding: 8px 12px;
+ }
+
+ .submit-field{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .submit-field img{
+  height: auto;
+  max-width: 100%;
+ }
+
+ .submit-btn{
+   margin-top:1rem;
+ }
+
+ .card{
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:auto;
+  /* height:55vh; */
+  height:100%; 
+  width:55vw;
+  margin-top:3rem;
+  border-radius: 7px;
+  display:none;
+}
+
+.card::before{
+  content:'';
+  position: absolute;
+  display: block;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  /* background: url('/assets/watersym.jpg') center center; */
+  opacity: .2;
+  z-index:-1;
+  border-radius: 7px;
+}
+
+.card::after{
+  content:'';
+  display:block;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  /* background:linear-gradient(to right, rgb(4, 168, 154),rgb(2, 162, 149), rgb(0, 128, 117)); */
+  z-index:-2;
+  opacity: 1;
+  border-radius: 7px;
+}
+
+.card{
+  color:white;
+  font-size:1.2rem;
+}
+
+.card-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card-img{
+  flex:1;
+  margin-left:1rem;
+  margin-top:5rem;
+}
+
+.card-img img{
+  height:auto;
+  width:95%;
+  border-radius:5px;
+}
+
+.card-txt{
+  margin-top:2rem;
+  flex:2;
+  padding: .5rem;
+}
+
+.card-txt h2{
+  color:rgb(1, 35, 32);
+  margin:1rem 0;
+  font-size: 1.7rem;
+  letter-spacing:.2rem;
+  text-justify: inter-word;
+}
+
+.card-txt p{
+  width:80%;
+  text-align: justify;
+  text-justify: inter-word;
+  color:white;
+  font-size: 1.2rem; 
+}
+.join{
+  margin:1rem;
+}
+.card-link{
+  color:white;
+  background-color: rgb(1, 35, 32);
+  border-radius:.7rem;
+  border:2px solid rgb(1, 35, 32);
+  padding: 6px 36px;
+  transition: .9s;
+  cursor:pointer;  
+  margin-top:1rem;
+}
+
+.card-link:hover{
+  background: none;
+}
+
+.water-bg::before{
+  background: url('/assets/watersym.jpg') center center;
+}
+
+.water-bg::after{
+  background:linear-gradient(to right, rgb(4, 168, 154),rgb(2, 162, 149), rgb(0, 128, 117));
+}
+
+.water-text{
+
+}
+
+.water-link{
+
+}
+
+.earth-bg::before{
+  background: url('/assets/earthsym.jpg') center center;
+}
+
+.earth-bg::after{
+  background:linear-gradient(to right, rgb(4, 131, 4), rgb(9, 107, 9), black) !important;
+}
+
+.earth-text{
+  color: white !important;
+
+}
+
+.earth-link{
+  background-color: white !important;
+  color:green;
+  border:1px solid green;
+}
+
+.earth-link:hover, .fire-link:hover, .air-link:hover{
+  background: none !important;
+  color:white;
+  border:1px solid white;
+}
+
+.fire-bg::before{
+  background: url('/assets/firesym.jpg') center center;
+}
+
+.fire-bg::after{
+  background:linear-gradient(to right,red, rgb(114, 5, 5), rgb(70, 1, 1)) !important;
+}
+.fire-text{
+  color:orange !important;
+}
+
+.fire-link{
+  background-color: orange !important;
+  border:1px solid orange;
+}
+
+.air-bg::before{
+  background: url('/assets/airsym.jpg') center center;
+}
+
+.air-bg::after{
+  background:linear-gradient(to right, rgb(114, 59, 19), rgb(36, 15, 1)) !important;
+}
+
+.air-text{
+  color:chocolate !important;
+}
+
+.air-link{
+  background-color: chocolate !important;
+  border:1px solid chocolate;
+}
+
+.top{
+  margin-top:2rem;
+}
+
+footer{
+  margin-top:12rem;
+  background-color:rgb(14, 185, 185);
+  color:white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding:.5rem;
+}
+/* Media Query */
+
+@media(max-width:700px){
+  .form-container{ 
+    height:100vh;
+    width:100vw;
+  }
+
+  .form-container h1{
+    margin-top:1rem;
+  }
+
+  .card{
+    height:100%;
+    width:100vw;
+    margin-top:2rem;
+    border:1px solid white;
+  }
+
+  .card-content{
+    margin-top: 1rem;
+    flex-direction: column;
+    width:100%;
+  }
+
+  .card-img{
+    flex:1;
+    margin:0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-img img{
+    max-width:75%;
+    margin-top: .5rem;
+  }
+
+  .card-txt{
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
