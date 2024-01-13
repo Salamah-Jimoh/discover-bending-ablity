@@ -239,6 +239,7 @@ input[type = "radio"]{
   text-justify: inter-word;
   color:white;
   font-size: 1.2rem; 
+  line-height: 1.5rem;
 }
 .join{
   margin:1rem;
@@ -392,5 +393,10 @@ footer{
     align-items: center;
   }
 
-
+.card-txt p{
+  border:1px solid red;
+  width:80%;
+  text-align: left;
+  line-height: 1.8rem;
+}
 }
